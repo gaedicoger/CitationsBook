@@ -9,7 +9,7 @@
   <body>
     <h1>Mes citations</h1>
     <h2>Gestionnaire de citations en ligne</h2>
-    <h3>0 citations</h3>
+    <h3 id="count">0 citations</h3>
     <hr />
     <form id="citation-form">
       <label for="citation">Citations</label
@@ -19,13 +19,16 @@
         name="citation"
         placeholder="Entrez votre citation ici"
       />
-      <label for="citation">Auteurice</label
-      ><input type="text" id="author" name="author" placeholder="Auteurice" />
+      <label for="citation">Auteurice</label>
+      <input type="text" id="author" name="author" placeholder="Auteurice" />
       <input type="submit" value="Envoyer" />
     </form>
+    <hr />
     <div id="quote-list">
-      <p class="text">"On ne naît pas femme, on le devient."</p>
-      <p class="author">Simone de Beauvoir</p>
+      <div class="quote">
+        <p class="citationText">"On ne naît pas femme, on le devient."</p>
+        <p class="authorText">Simone de Beauvoir</p>
+      </div>
     </div>
   </body>
   <script src="script.js" defer></script>
